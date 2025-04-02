@@ -22,7 +22,7 @@ lbl.place(relx=0.5, y=340, anchor=CENTER)
 def msg():
     MsgBox = messagebox.showinfo(
         "Alert", "Do you want to calculate the denomination count?")
-    if MsgBox == "ok":
+    if MsgBox == "OK":
         topwin()
 
 button1 = Button(root,
@@ -60,9 +60,9 @@ def topwin():
             note50000 = amount // 50000
             amount %= 50000
             note10000 = amount // 10000
-            amount %= 50000
+            amount %= 10000
             note5000 = amount // 5000
-            amount %= 50000
+            amount %= 5000
             note1000 = amount // 1000
             amount %= 1000
 
@@ -82,7 +82,7 @@ def topwin():
     label.place(x=230, y=50)
     entry.place(x=200, y=80)
     btn.place(x=240, y=120)
-    lbl.place(x=140, y=170)
+    Lbl.place(x=140, y=170)
     
     l1.place(x= 180, y= 200)
     l2.place(x= 180, y= 230)
